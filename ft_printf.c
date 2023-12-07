@@ -30,12 +30,3 @@ int	ft_printf(const char *s, ...)
 	va_end(ap);
 	return (ft_putchar(-1));
 }
-
-// #include <limits.h>
-// #include <stdio.h>
-// int	main(void)
-// {
-// 	int a = printf("%c%c%c%c œ %c%c\n", -1278, -1, 0, 1, 255, 1234);
-// 	int b = ft_printf("%c%c%c%c œ %c%c\n", -1278, -1, 0, 1, 255, 1234);
-// 	printf("%d %d\n", a, b);
-// }
