@@ -74,14 +74,6 @@ int ft_printf(const char *format, ...);
    - Parses the format string for flags (`-`, `0`, `.`, `*`) and handles width and precision.
    - Updates the `t_box` structure to track formatting details for the current conversion.
 
-3. **Helper Functions**:
-   - `ft_char`: Handles character output.
-   - `ft_string`: Handles string output with precision and width adjustments.
-   - `ft_integer`: Processes signed integers.
-   - `ft_unsigned`: Processes unsigned integers.
-   - `ft_hex`: Handles hexadecimal formatting.
-   - `ft_pointer`: Handles pointer address formatting.
-
 ---
 
 ## Compilation and Testing
