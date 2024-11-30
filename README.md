@@ -61,3 +61,32 @@ The following flags are supported:
 ### Function Prototype
 ```c
 int ft_printf(const char *format, ...);
+```
+
+## Function Overview
+
+### Key Components:
+1. **`format_print`**:
+   - Handles different format specifiers (`c`, `s`, `p`, `x`, etc.).
+   - Calls helper functions like `ft_string`, `ft_char`, `ft_integer`, etc., to process specific data types.
+
+2. **`process_flags`**:
+   - Parses the format string for flags (`-`, `0`, `.`, `*`) and handles width and precision.
+   - Updates the `t_box` structure to track formatting details for the current conversion.
+
+3. **Helper Functions**:
+   - `ft_char`: Handles character output.
+   - `ft_string`: Handles string output with precision and width adjustments.
+   - `ft_integer`: Processes signed integers.
+   - `ft_unsigned`: Processes unsigned integers.
+   - `ft_hex`: Handles hexadecimal formatting.
+   - `ft_pointer`: Handles pointer address formatting.
+
+---
+
+## Compilation and Testing
+
+### Compilation
+To compile the `ft_printf` library:
+```bash
+gcc -Wall -Wextra -Werror ft_printf.c -o ft_printf
